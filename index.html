@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irfan Yasin - My Portofolio</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Library -->
+    <script src="node_modules/typed.js/lib/typed.js" type="text/javascript"></script>
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <style>
+         :root {
+            --text-color: #666666;
+            --h-text-color: #3c3c3c;
+            --bg-color-1: #9DD9F2;
+            --bg-color-2: #7ABDE5;
+            --bg-color-3: #E1CBD7;
+            --bg-color-4: #FFFFFF;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Main start -->
+    <main>
+        <div class="container-page">
+            <nav class="navbar navbar-expand-lg bg-transparent position-absolute z-1 p-4">
+                <div class="container-fluid">
+                    <span><i class="fa-solid fa-bars menu-bars-icon"></i></span>
+                    <span><i class="fa-solid fa-xmark d-none menu-xmark-icon"></i></span>
+                    <div class="navbar-nav d-none">
+                        <a class="nav-link active home-page" href="#home-page" onclick="homePage('d-none', 'active')">Home</a>
+                        <a class="nav-link about-page" href="#about-page">About me</a>
+                        <a class="nav-link skill-page" href="#skill-page">Skill and Education</a>
+                        <a class="nav-link contact-page" href="#contact-page">Contact</a>
+                        <a class="nav-link portofolio-page" href="#portofolio-page">Portofolio</a>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="page-screen p-5 d-flex">
+                <!-- Home page start -->
+                <section class="row align-items-center" id="home-page">
+                    <div class="col-md-6 headline">
+                        <h1>Hi, I'm <span class="name">Irfan Yasin</span></h1>
+                        <h1>I'm a <span id="typed"></span></h1>
+                        <p>Happiness is not something readymade. It comes from your own actions.</p>
+                        <div class="icon-medsos">
+                            <a href="https://api.whatsapp.com/send?phone=+6287859967039&text=Halo%20Irfan," class="icon-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://instagram.com/al_irfan_y" class="icon-instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="http://github.com/alirfanyasin" class="icon-github"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon-linkedin" onclick="comingsoon()"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="image-profile">
+                            <img src="asset/img/irfan-yasin.png" alt="">
+                        </div>
+                        <div class="bubble-bg bubble-1"></div>
+                        <div class="bubble-bg bubble-2"></div>
+                        <div class="bubble-bg bubble-3"></div>
+                        <div class="bubble-bg bubble-4"></div>
+                    </div>
+                </section>
+                <!-- Home page end -->
+
+
+                <!-- About page start -->
+                <section class="row align-items-center d-none" id="about-page">
+                    <div class="col-md-6">
+                        <div class="image-about">
+                            <img src="asset/img/irfan-yasin.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="description-about">
+                            <h3 class="fw-semibold">About Me</h3>
+                            <small class="d-block mb-3">This is my profile</small>
+                            <p>Hi, my name is Irfan Yasin, born on Kangean Island, which is located on Madura Island. My hobbies are reading, coding, and playing futsal.</p>
+                            <p>I started learning about IT in 2018 until now. My experience in making projects, namely solving problems, analyzing algorithms, design and database structure, has also been produced a lot</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- About page end -->
+
+                <!-- Skill Page start -->
+                <section class="row align-items-center d-none" id="skill-page">
+                    <div class="col-md-6">
+                        <div class="skill-about d-flex-none">
+                            <h3 class="fw-semibold">Skill</h3>
+                            <small class="d-block mb-3">Skill that have been mastered</small>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">PHP</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">JavaScript</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">Python</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">C / C++</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">Laravel</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">CodeIgniter</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">React JS</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">Node JS</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">Express JS</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">Tailwind</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">Bootstrap</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">HTML</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">CSS</div>
+                                    <div class="skill d-inline-block px-4 py-1 rounded-pill mb-2">MySQL</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- Section: Timeline -->
+                        <section class="py-5">
+                            <ul class="timeline">
+                                <li class="timeline-item mb-5">
+                                    <h5 class="fw-bold">MTs Al-Hidayah</h5>
+                                    <p class="text-muted mb-2 fw-bold">2016 - 2019</p>
+                                    <p class="text-muted">
+                                        Keagamaan
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item mb-5">
+                                    <h5 class="fw-bold">SMA NEGERI 1 ARJASA</h5>
+                                    <p class="text-muted mb-2 fw-bold">2019 - 2022</p>
+                                    <p class="text-muted">
+                                        IPA (Ilmu Pengetahuan Alam)
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item mb-5">
+                                    <h5 class="fw-bold">IT Telkom Surabaya</h5>
+                                    <p class="text-muted mb-2 fw-bold">2022 - Now</p>
+                                    <p class="text-muted">
+                                        S1 Informatika
+                                    </p>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- Section: Timeline -->
+                    </div>
+                </section>
+                <!-- Skill Page end -->
+
+
+                <!-- Contact page start -->
+                <section class="row align-items-center d-none" id="contact-page">
+                    <div class="col-md-6">
+                        <form action="#" method="post">
+                            <div class="form-group mb-3">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control mt-1" name="username" id="username" placeholder="Enter your name...">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control mt-1" name="email" id="email" placeholder="Email Address...">
+                            </div>
+                            <div class="fom-group mb-3">
+                                <label for="message">Message</label>
+                                <textarea name="message" class="mt-1" id="message" cols="30" rows="6" placeholder="Write your message this form"></textarea>
+                            </div>
+                            <button type="button" class="btn" onclick="success()">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 contact-information">
+                        <ul>
+                            <li>
+                                <div>Email Addrees</div>
+                                <p>irfanyasin373@gmail.com</p>
+                            </li>
+                            <li>
+                                <div>Phone Number</div>
+                                <p>+62 878-5996-7039</p>
+                            </li>
+                            <li>
+                                <div>Location</div>
+                                <p>Surabaya . Indonesia</p>
+                            </li>
+                            <li>
+                                <div>Follow Me</div>
+                                <div class="icon-medsos mt-3">
+                                    <a href="https://api.whatsapp.com/send?phone=+6287859967039&text=Halo%20Irfan," class="icon-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://instagram.com/al_irfan_y" class="icon-instagram"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="http://github.com/alirfanyasin" class="icon-github"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="icon-linkedin" onclick="comingsoon()"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Contact page end -->
+
+
+                <!-- Portofolio page start -->
+                <section class="row align-items-center d-none" id="portofolio-page">
+                    <div class="col-md-4 mb-3 mt-4">
+                        <div class="project">
+                            <a href="http://smanar.epizy.com/public" target="_blank">
+                                <img src="asset/img/sma-desktop.png" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mt-4">
+                        <div class="project">
+                            <a href="#" onclick="comingsoon()">
+                                <img src="asset/img/restoran-laptop.png" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mt-4">
+                        <div class="project">
+                            <a href="#" onclick="comingsoon()">
+                                <img src="asset/img/dekstop-version.png" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mt-4">
+                        <div class="project">
+                            <a href="#" onclick="comingsoon()">
+                                <img src="asset/img/marketing-desktop.png" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mt-4">
+                        <div class="project">
+                            <a href="#" onclick="comingsoon()">
+                                <img src="asset/img/online-learning-desktop.png" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mt-4">
+                        <div class="project">
+                            <a href="#" onclick="comingsoon()">
+                                <img src="asset/img/ppdb-laptop.png" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Portofolio page end -->
+            </div>
+        </div>
+    </main>
+    <!-- Main end -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="asset/js/script.js"></script>
+    <script>
+        // Typed JS
+        var typed3 = new Typed('#typed', {
+            strings: ['Web Developer', 'Programmer', 'College Student'],
+            typeSpeed: 50,
+            backSpeed: 10,
+            smartBackspace: true, // this is a default
+            loop: true
+        });
+
+
+        function comingsoon() {
+            Swal.fire({
+                title: 'Coming Soon',
+                text: 'Link not available',
+                icon: 'warning',
+                confirmButtonText: 'Ok'
+            })
+        }
+
+
+        function success() {
+            Swal.fire({
+                title: 'Success',
+                text: 'Your message has been successfully sent',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            })
+        }
+
+        // Anime JS
+        anime({
+            targets: '.bubble-bg.bubble-4',
+            keyframes: [{
+                translateY: -90
+            }, {
+                translateX: 250
+            }, {
+                translateY: 180
+            }, {
+                translateX: 0
+            }, {
+                translateY: 0
+            }],
+            duration: 10000,
+            easing: 'easeOutElastic(1, .8)',
+            loop: true
+        });
+        anime({
+            targets: '.bubble-bg.bubble-2',
+            keyframes: [{
+                translateY: 100
+            }, {
+                translateX: -150
+            }, {
+                translateY: -80
+            }, {
+                translateX: 0
+            }, {
+                translateY: 0
+            }],
+            duration: 10000,
+            easing: 'easeOutElastic(1, .8)',
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
